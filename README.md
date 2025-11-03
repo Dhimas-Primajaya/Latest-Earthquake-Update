@@ -38,15 +38,15 @@ Here is a simple example demonstrating how to use the quakindo package
 in your Python code:
 
 ``` python
-from quakindo import ekstraksi_data, tampilkan_data
+from quakindo import fetch_earthquake_data, display_data
 
 # 1. Fetch the latest data
-data_gempa = ekstraksi_data()
+equake_data = fetch_earthquake_data()
 
 # 2. Display the data
-if data_gempa:
+if equake_data:
     print("--- QUAKINDO EARTHQUAKE REPORT ---")
-    tampilkan_data(data_gempa)
+    display_data(equake_data)
 else:
     print("Failed to retrieve earthquake data.")
 ```
